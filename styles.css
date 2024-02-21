@@ -1,0 +1,203 @@
+body{
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+div{
+  padding: 5px;
+}
+h1{
+  font-weight: bold;
+  font-size: 50px;
+}
+h1, h2{
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal; 
+}
+input{
+  padding: 6px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid salmon;
+  padding: 5px;
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.name-input{
+  width: 90%;
+}
+input[type=text]{
+ cursor: text;
+}
+textarea:focus, input:focus{
+  outline: none;
+  border-bottom: solid rebeccapurple;
+}
+.habit{
+  border: solid black;
+  border-radius: 40px;
+  box-shadow: 5px 5px 8px;
+  padding-left: 30px;
+  margin-right:10px ;
+}
+.yourHabit{
+  margin: 7px;
+
+}
+.weekly{
+}
+#yourHabit{
+ width: 50%;
+}
+.challenge{
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  padding: 7px 14px 7px;
+  margin-left: 5px;
+  border-radius: 7px;
+  background-color: papayawhip;
+   transition-duration: 0.4s;
+}
+button:hover{
+  background-color: palevioletred;
+  color: white;
+}
+.boxing{
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+}
+.day{
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+  column-gap: 20px;
+}
+.weekday{
+  text-align: center;
+  font-weight: bold;
+}
+.style-task{
+  font-size: large;
+}
+.todo-grid, .todo-input-grid {
+  display: grid;
+  grid-template-columns: 170px 120px 70px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.todo-input-grid{
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+.to-do{
+  border:solid  #000;
+  border-radius: 50px;
+  margin-left: 5px;
+  box-shadow: 5px 5px 5px;
+}
+
+.delete-todo-button{
+  background-color: darkred;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 10px;
+}
+.delete-todo-button:hover{
+ background-color: black;
+ 
+}
+.column{
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.custom-select {
+  min-width: 50px;
+  position: relative;
+}
+select:focus {
+  outline: none;
+}
+
+select {
+  -webkit-appearance: none;
+  width: 100%;
+  font-size:15px;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid purple;
+  border-radius: 15px;
+  transform: translateY(-0.075em);
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  
+}
+
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+  background-color: palevioletred;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  
+}
+@media (max-width:1500px) {
+ .boxing{
+  display: flex;
+  flex-direction: column;
+ }
+ .to-do{
+  padding-bottom: 20px;
+ }
+ .todo-grid, .todo-input-grid {
+  display: grid;
+  grid-template-columns: 40% 35% 15%;
+ }
+ .column{
+  padding: 10%;
+  margin-left: 15%;
+ }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <title>Planner</title>
+  </head>
+  <body>
+    <h1>Planner</h1>
+    <div class="boxing">
+      <div class="to-do">
+        <h2>To-Do-List</h2>
+        <div class="todo-input-grid">
+          <input
+            placeholder="type task here"
+            class="js-name-input name-input"
+          />
+          <div class="custom-select">
+            <select name="urgency" class="js-due-date-input due-date-input">
+              <option value="urgent and important">urgent and important</option>
+              <option value="urgent but not important">
+                urgent but not important
+              </option>
+              <option value="not urgent but important">
+                not urgent but important
+              </option>
+              <option value="not urgent and not important">
+                not urgent and not important
+              </option>
+            </select>
+          </div>
+
+          <button class="add add-todo-button">Add</button>
+        </div>
+        <div class="js-todo-list todo-grid"></div>
+      </div>
+      <div class="weekly">
+        <h2>Weekly Goals</h2>
+        <div class="js-weekdays-grid">
+          <div class="day day0">
+            <div class="weekday monday">monday</div>
+            <div>
+              <input
+                class="mondayTask"
+                type="text"
+                placeholder="Code the BMI"
+              />
+            </div>
+            <div><button class="js-add-task0">add task</button></div>
+          </div>
+          <div class="day day1">
+            <div class="weekday tuesday">tuesday</div>
+            <div>
+              <input
+                class="tuesdayTask"
+                type="text"
+                placeholder="Practice UI"
+              />
+            </div>
+            <div>
+              <button class="js-add-task1">add task</button>
+            </div>
+          </div>
+          <div class="day day2">
+            <div class="weekday wednesday">wednesday</div>
+            <div>
+              <input
+                class="wednesdayTask"
+                type="text"
+                placeholder="Code Project"
+              />
+            </div>
+            <div>
+              <button class="js-add-task2">add task</button>
+            </div>
+          </div>
+          <div class="day day3">
+            <div class="weekday thursday">thursday</div>
+            <div>
+              <input
+                class="thursdayTask"
+                type="text"
+                placeholder="Code Store"
+              />
+            </div>
+            <div>
+              <button class="js-add-task3">add task</button>
+            </div>
+          </div>
+          <div class="day day4">
+            <div class="weekday friday">friday</div>
+            <div>
+              <input class="fridayTask" type="text" placeholder="Code Game" />
+            </div>
+            <div>
+              <button class="js-add-task4">add task</button>
+            </div>
+          </div>
+          <div class="day day5">
+            <div class="weekday saturday">saturday</div>
+            <div>
+              <input
+                class="saturdayTask"
+                type="text"
+                placeholder="Code Landing Page"
+              />
+            </div>
+            <div>
+              <button class="js-add-task5">add task</button>
+            </div>
+          </div>
+          <div class="day day6">
+            <div class="weekday sunday">sunday</div>
+            <div>
+              <input
+                class="sundayTask"
+                type="text"
+                placeholder="Code Portfolio"
+              />
+            </div>
+            <div>
+              <button class="js-add-task6">add task</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="habit">
+        <h2>Habit Tracker</h2>
+        <div class="challenge">
+          <input
+            class="yourHabit"
+            type="text"
+            placeholder="type habit name"
+            id="yourHabit"
+          />
+
+          <button class="saveHabit">save</button>
+        </div>
+        <div class="column"></div>
+      </div>
+    </div>
+    <script src="./interactive.js"></script>
+  </body>
+</html>
